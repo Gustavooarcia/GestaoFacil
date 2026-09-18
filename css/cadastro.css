@@ -1,0 +1,6 @@
+/* O cadastro aproveita a mesma linguagem da tela de login, mas ganha mais espaço para os campos. */
+@import url('login.css');
+.wide-card { width: min(640px, calc(100% - 40px)); }
+.wide-card .form-grid { margin-bottom: 0; }
+.wide-card .form-grid > div { min-width: 0; }
+.wide-card .form-grid input { margin-bottom: 16px; }

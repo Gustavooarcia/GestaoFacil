@@ -1,0 +1,1 @@
+-- As políticas de RLS serão adicionadas após a criação das tabelas.

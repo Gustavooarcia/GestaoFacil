@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos | Gerenciar Matrículas</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/admin-matriculas.css">
+</head>
+<body class="dashboard-page admin-page">
+    <header class="dashboard-header admin-header"><div class="container dashboard-nav"><a class="brand" href="admin.html">Gestão<span>+</span></a><nav aria-label="Navegação administrativa"><a href="admin.html">Dashboard</a><a href="admin-alunos.html">Alunos</a><a href="admin-cursos.html">Cursos</a><a class="active" href="admin-matriculas.html">Matrículas</a><a href="index.html">Sair</a></nav></div></header>
+        <!-- O indicador de Realtime já aparece aqui para lembrar onde a atualização automática entrará depois. -->
+<main class="container dashboard-content">
+        <section class="page-heading action-heading"><div><p class="eyebrow">ADMINISTRAÇÃO</p><h1>Matrículas</h1><p>Acompanhe e atualize os registros de matrícula dos alunos.</p></div><span class="live-indicator"><i></i> Realtime ativo</span></section>
+        <section class="panel">
+            <div class="toolbar"><div class="search-admin"><label for="enrollment-search">Buscar</label><input id="enrollment-search" type="search" placeholder="Aluno ou curso"></div><select aria-label="Filtrar por status"><option>Todos os status</option><option>Ativa</option><option>Pendente</option><option>Cancelada</option><option>Concluída</option></select><select aria-label="Filtrar por curso"><option>Todos os cursos</option><option>JavaScript</option><option>HTML e CSS</option><option>Python</option></select></div>
+            <div class="table-wrap"><table class="data-table"><thead><tr><th>Aluno</th><th>Curso</th><th>Data</th><th>Status</th><th>Ação</th></tr></thead><tbody><tr><td>João Silva</td><td>JavaScript Básico</td><td>10/09/2026</td><td><span class="status active-status">Ativa</span></td><td><select aria-label="Status de João"><option selected>Ativa</option><option>Pendente</option><option>Cancelada</option></select></td></tr><tr><td>Maria Souza</td><td>Python Essencial</td><td>12/09/2026</td><td><span class="status pending-status">Pendente</span></td><td><select aria-label="Status de Maria"><option>Ativa</option><option selected>Pendente</option><option>Cancelada</option></select></td></tr><tr><td>Carlos Lima</td><td>HTML e CSS</td><td>13/09/2026</td><td><span class="status done-status">Concluída</span></td><td><select aria-label="Status de Carlos"><option>Ativa</option><option>Cancelada</option><option selected>Concluída</option></select></td></tr></tbody></table></div>
+        </section>
+        <section class="realtime-note"><div><span class="live-dot"></span><strong>Atualização automática</strong><p>Quando uma matrícula for criada ou alterada, o painel poderá receber a mudança sem recarregar a página.</p></div></section>
+    </main>
+</body>
+</html>

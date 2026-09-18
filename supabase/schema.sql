@@ -1,0 +1,1 @@
+-- O schema do PostgreSQL será criado no próximo passo do projeto.

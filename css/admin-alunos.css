@@ -1,0 +1,7 @@
+/* A área de alunos prioriza tabela, filtros e ações de CRUD. */
+.search-admin { min-width: min(420px, 100%); }
+.search-admin label { margin-bottom: 7px; }
+.table-actions { display: flex; gap: 8px; }
+.table-actions button, .course-actions button { border: 0; background: transparent; color: var(--blue-700); font-weight: 700; padding: 4px; }
+.table-actions .danger-text, .course-actions .danger-text { color: var(--danger-text); }
+@media (max-width: 640px) { .search-admin { min-width: 0; width: 100%; } }

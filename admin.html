@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos | Admin</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="dashboard-page admin-page">
+    <header class="dashboard-header admin-header"><div class="container dashboard-nav"><a class="brand" href="admin.html">Gestão<span>+</span></a><nav aria-label="Navegação administrativa"><a class="active" href="admin.html">Dashboard</a><a href="admin-alunos.html">Alunos</a><a href="admin-cursos.html">Cursos</a><a href="admin-matriculas.html">Matrículas</a><a href="index.html">Sair</a></nav></div></header>
+
+        <!-- O painel administrativo foi pensado para mostrar os principais números sem deixar a tela carregada. -->
+<main class="container dashboard-content">
+        <section class="welcome-row"><div><p class="eyebrow">ADMINISTRAÇÃO</p><h1>Painel geral</h1><p>Acompanhe os principais dados do sistema em um só lugar.</p></div><span class="admin-badge">Administrador</span></section>
+        <section class="stats-grid four-cols"><div class="stat-card"><span>Alunos</span><strong>120</strong><small>cadastros ativos</small></div><div class="stat-card"><span>Cursos</span><strong>8</strong><small>cursos disponíveis</small></div><div class="stat-card"><span>Matrículas</span><strong>245</strong><small>no sistema</small></div><div class="stat-card"><span>Pendentes</span><strong>12</strong><small>aguardando análise</small></div></section>
+        <section class="admin-grid"><div class="panel"><div class="panel-header"><div><p class="eyebrow">ATIVIDADE RECENTE</p><h2>Últimas matrículas</h2></div><a href="admin-matriculas.html">Ver todas</a></div><div class="table-wrap"><table><thead><tr><th>Aluno</th><th>Curso</th><th>Status</th></tr></thead><tbody><tr><td>João Silva</td><td>JavaScript</td><td><span class="status active-status">Ativa</span></td></tr><tr><td>Maria Souza</td><td>Python</td><td><span class="status pending-status">Pendente</span></td></tr><tr><td>Carlos Lima</td><td>HTML e CSS</td><td><span class="status done-status">Concluída</span></td></tr></tbody></table></div></div><aside class="panel quick-panel"><p class="eyebrow">ACESSO RÁPIDO</p><h2>Gerenciamento</h2><a class="quick-link" href="admin-alunos.html">Gerenciar alunos <span>→</span></a><a class="quick-link" href="admin-cursos.html">Gerenciar cursos <span>→</span></a><a class="quick-link" href="admin-matriculas.html">Gerenciar matrículas <span>→</span></a></aside></section>
+        <section class="realtime-note"><div><span class="live-dot"></span><strong>Atualizações em tempo real</strong><p>Esta área poderá receber novidades de matrículas automaticamente com o Realtime do Supabase.</p></div></section>
+    </main>
+</body>
+</html>

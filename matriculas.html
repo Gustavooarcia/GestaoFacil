@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos | Matrículas</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/matriculas.css">
+</head>
+<body class="dashboard-page">
+    <header class="dashboard-header"><div class="container dashboard-nav"><a class="brand" href="aluno.html">Gestão<span>+</span></a><nav aria-label="Navegação do aluno"><a href="aluno.html">Início</a><a href="cursos.html">Cursos</a><a class="active" href="matriculas.html">Minhas matrículas</a><a href="perfil.html">Perfil</a><a href="index.html">Sair</a></nav></div></header>
+
+        <!-- A tabela começa com dados fictícios só para facilitar a construção e os testes da interface. -->
+<main class="container dashboard-content">
+        <section class="page-heading"><p class="eyebrow">ACOMPANHAMENTO</p><h1>Minhas matrículas</h1><p>Confira o histórico e o status das suas matrículas.</p></section>
+        <section class="panel">
+            <div class="toolbar"><div><strong>3 matrículas</strong><span class="muted">Atualizado recentemente</span></div><select aria-label="Filtrar por status"><option>Todos os status</option><option>Ativa</option><option>Pendente</option><option>Concluída</option></select></div>
+            <div class="table-wrap"><table class="data-table"><thead><tr><th>Curso</th><th>Carga horária</th><th>Data da matrícula</th><th>Status</th><th>Ação</th></tr></thead><tbody><tr><td>JavaScript Básico</td><td>40 horas</td><td>10/09/2026</td><td><span class="status active-status">Ativa</span></td><td><a href="curso.html?id=1">Ver curso</a></td></tr><tr><td>HTML e CSS</td><td>30 horas</td><td>12/09/2026</td><td><span class="status pending-status">Pendente</span></td><td><a href="curso.html?id=2">Ver curso</a></td></tr><tr><td>Banco de Dados</td><td>36 horas</td><td>13/09/2026</td><td><span class="status done-status">Concluída</span></td><td><a href="curso.html?id=4">Ver curso</a></td></tr></tbody></table></div>
+        </section>
+    </main>
+</body>
+</html>

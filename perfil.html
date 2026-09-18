@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos | Perfil</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body class="dashboard-page">
+    <header class="dashboard-header"><div class="container dashboard-nav"><a class="brand" href="aluno.html">Gestão<span>+</span></a><nav aria-label="Navegação do aluno"><a href="aluno.html">Início</a><a href="cursos.html">Cursos</a><a href="matriculas.html">Minhas matrículas</a><a class="active" href="perfil.html">Perfil</a><a href="index.html">Sair</a></nav></div></header>
+
+        <!-- O formulário está pronto para receber futuramente os dados reais do usuário autenticado. -->
+<main class="container dashboard-content">
+        <section class="page-heading"><p class="eyebrow">CONTA</p><h1>Meu perfil</h1><p>Mantenha seus dados atualizados para facilitar a identificação das suas matrículas.</p></section>
+        <section class="profile-layout">
+            <aside class="panel profile-summary"><div class="profile-avatar large">G</div><h2>Gustavo Garcia</h2><p>Aluno</p><div class="summary-line"><span>E-mail</span><strong>gustavo@email.com</strong></div><div class="summary-line"><span>Matrículas</span><strong>3</strong></div></aside>
+            <section class="panel profile-form-panel">
+                <div class="panel-header"><div><p class="eyebrow">DADOS PESSOAIS</p><h2>Editar informações</h2></div></div>
+                <form class="profile-form">
+                    <div class="form-grid"><div><label for="profile-name">Nome completo</label><input id="profile-name" value="Gustavo Garcia"></div><div><label for="profile-phone">Telefone</label><input id="profile-phone" value="(11) 99999-9999"></div></div>
+                    <label for="profile-email">E-mail</label><input id="profile-email" type="email" value="gustavo@email.com">
+                    <div class="upload-area"><div><strong>Foto de perfil</strong><p>Envie uma imagem para usar no seu perfil.</p></div><label class="upload-button" for="avatar-file">Escolher arquivo<input type="file" id="avatar-file" accept="image/*"></label></div>
+                    <div class="form-actions"><button class="button secondary" type="button">Cancelar</button><button class="button primary" type="submit">Salvar alterações</button></div>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

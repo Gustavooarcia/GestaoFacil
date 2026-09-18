@@ -1,0 +1,9 @@
+/* Dashboard do aluno: cartões simples e bastante espaço em branco para os dados respirarem. */
+.welcome-row h1 { margin-bottom: 8px; }
+.stats-grid { margin-bottom: 24px; }
+.dashboard-grid { display: grid; grid-template-columns: 1fr 300px; gap: 20px; }
+.large-panel { min-width: 0; }
+.profile-panel { text-align: center; }
+.profile-avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--blue-100); color: var(--blue-800); display: inline-flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; margin-bottom: 12px; }
+.profile-panel p { color: var(--muted); }
+@media (max-width: 900px) { .dashboard-grid { grid-template-columns: 1fr; } }

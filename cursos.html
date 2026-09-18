@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos | Cursos</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cursos.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="index.html">Gestão<span>+</span></a>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a class="active" href="cursos.html">Cursos</a>
+                <a href="login.html">Entrar</a>
+                <a class="nav-button" href="cadastro.html">Criar conta</a>
+            </nav>
+        </div>
+    </header>
+
+        <!-- A listagem foi deixada com dados visuais de exemplo para a próxima etapa, quando o Supabase será conectado. -->
+<main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow">CATÁLOGO</p>
+                <h1>Encontre o curso certo para você.</h1>
+                <p>Pesquise pelo nome, veja a carga horária e abra os detalhes de cada curso.</p>
+            </div>
+        </section>
+
+        <section class="catalog-section section-space">
+            <div class="container">
+                <div class="filters-bar">
+                    <div class="search-box">
+                        <label for="course-search">Buscar curso</label>
+                        <input type="search" id="course-search" placeholder="Digite o nome do curso">
+                    </div>
+                    <div class="filter-box">
+                        <label for="category">Categoria</label>
+                        <select id="category">
+                            <option>Todas</option>
+                            <option>Tecnologia</option>
+                            <option>Web</option>
+                            <option>Programação</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="result-line"><span>8 cursos encontrados</span><span>Ordenar: Mais recentes</span></div>
+
+                <div class="course-grid catalog-grid">
+                    <article class="course-card"><div class="course-image blue-one">JS</div><div class="course-body"><span class="tag">Tecnologia</span><h3>JavaScript Básico</h3><p>Fundamentos da linguagem e lógica para web.</p><div class="course-meta"><span>40 horas</span><a href="curso.html?id=1">Ver detalhes</a></div></div></article>
+                    <article class="course-card"><div class="course-image blue-two">HC</div><div class="course-body"><span class="tag">Web</span><h3>HTML e CSS</h3><p>Estrutura, estilo e responsividade para páginas.</p><div class="course-meta"><span>30 horas</span><a href="curso.html?id=2">Ver detalhes</a></div></div></article>
+                    <article class="course-card"><div class="course-image blue-three">PY</div><div class="course-body"><span class="tag">Programação</span><h3>Python Essencial</h3><p>Lógica, funções e fundamentos da linguagem.</p><div class="course-meta"><span>50 horas</span><a href="curso.html?id=3">Ver detalhes</a></div></div></article>
+                    <article class="course-card"><div class="course-image blue-four">DB</div><div class="course-body"><span class="tag">Dados</span><h3>Banco de Dados</h3><p>Conceitos de tabelas, relacionamentos e SQL.</p><div class="course-meta"><span>36 horas</span><a href="curso.html?id=4">Ver detalhes</a></div></div></article>
+                    <article class="course-card"><div class="course-image blue-five">UX</div><div class="course-body"><span class="tag">Design</span><h3>Fundamentos de UX</h3><p>Princípios para criar experiências digitais mais claras.</p><div class="course-meta"><span>24 horas</span><a href="curso.html?id=5">Ver detalhes</a></div></div></article>
+                    <article class="course-card"><div class="course-image blue-six">API</div><div class="course-body"><span class="tag">Backend</span><h3>APIs REST</h3><p>Requisições, respostas e integração entre sistemas.</p><div class="course-meta"><span>32 horas</span><a href="curso.html?id=6">Ver detalhes</a></div></div></article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-content"><div><strong>Gestão+</strong><p>Sistema acadêmico para fins educacionais.</p></div><p>Projeto desenvolvido com HTML, CSS, JavaScript e Supabase.</p></div></footer>
+</body>
+</html>

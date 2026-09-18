@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Cursos | Área do Aluno</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/aluno.css">
+</head>
+<body class="dashboard-page">
+    <header class="dashboard-header">
+        <div class="container dashboard-nav">
+            <a class="brand" href="aluno.html">Gestão<span>+</span></a>
+            <nav aria-label="Navegação do aluno"><a class="active" href="aluno.html">Início</a><a href="cursos.html">Cursos</a><a href="matriculas.html">Minhas matrículas</a><a href="perfil.html">Perfil</a><a href="index.html">Sair</a></nav>
+        </div>
+    </header>
+
+        <!-- O dashboard do aluno reúne os dados que depois serão carregados diretamente do Supabase. -->
+<main class="container dashboard-content">
+        <section class="welcome-row"><div><p class="eyebrow">ÁREA DO ALUNO</p><h1>Olá, Gustavo.</h1><p>Veja um resumo da sua jornada e acesse rapidamente suas informações.</p></div><a class="button primary" href="cursos.html">Explorar cursos</a></section>
+
+        <section class="stats-grid">
+            <div class="stat-card"><span>Meus cursos</span><strong>3</strong><small>cursos matriculados</small></div>
+            <div class="stat-card"><span>Matrículas</span><strong>3</strong><small>registros ativos</small></div>
+            <div class="stat-card"><span>Horas</span><strong>106</strong><small>carga horária total</small></div>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="panel large-panel"><div class="panel-header"><div><p class="eyebrow">ACOMPANHAMENTO</p><h2>Minhas matrículas</h2></div><a href="matriculas.html">Ver todas</a></div><div class="table-wrap"><table><thead><tr><th>Curso</th><th>Data</th><th>Status</th></tr></thead><tbody><tr><td>JavaScript Básico</td><td>10/09/2026</td><td><span class="status active-status">Ativa</span></td></tr><tr><td>HTML e CSS</td><td>12/09/2026</td><td><span class="status pending-status">Pendente</span></td></tr><tr><td>Banco de Dados</td><td>13/09/2026</td><td><span class="status done-status">Concluída</span></td></tr></tbody></table></div></div>
+            <aside class="panel profile-panel"><p class="eyebrow">MEU PERFIL</p><div class="profile-avatar">G</div><h2>Gustavo Garcia</h2><p>gustavo@email.com</p><a class="button secondary full" href="perfil.html">Editar perfil</a></aside>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema simples de gestão de cursos.">
+    <title>Gestão de Cursos | Início</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Cabeçalho principal do site. A navegação ainda é estática nesta primeira versão. -->
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="index.html">Gestão<span>+</span></a>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a class="active" href="index.html">Início</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="login.html">Entrar</a>
+                <a class="nav-button" href="cadastro.html">Criar conta</a>
+            </nav>
+        </div>
+    </header>
+
+        <!-- A home foi montada para apresentar o objetivo do sistema e levar o usuário rapidamente para os cursos. -->
+<main>
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">SISTEMA DE GESTÃO DE CURSOS</p>
+                    <h1>Encontre um curso e organize sua jornada de aprendizagem.</h1>
+                    <p class="hero-text">Uma plataforma simples para consultar cursos, realizar matrículas e acompanhar seus estudos em um só lugar.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="cursos.html">Ver cursos</a>
+                        <a class="button secondary" href="cadastro.html">Criar minha conta</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <span>Visão geral</span>
+                        <strong>2026</strong>
+                    </div>
+                    <div class="stat-highlight">
+                        <strong>8</strong>
+                        <span>cursos disponíveis</span>
+                    </div>
+                    <div class="mini-stats">
+                        <div><strong>120</strong><span>alunos</span></div>
+                        <div><strong>245</strong><span>matrículas</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-preview section-space">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">CURSOS</p>
+                        <h2>Escolha por onde começar</h2>
+                    </div>
+                    <a class="text-link" href="cursos.html">Ver todos os cursos</a>
+                </div>
+
+                <div class="course-grid">
+                    <article class="course-card">
+                        <div class="course-image blue-one">JS</div>
+                        <div class="course-body">
+                            <span class="tag">Tecnologia</span>
+                            <h3>JavaScript Básico</h3>
+                            <p>Fundamentos da linguagem e primeiros passos para desenvolver na web.</p>
+                            <div class="course-meta"><span>40 horas</span><a href="curso.html?id=1">Detalhes</a></div>
+                        </div>
+                    </article>
+                    <article class="course-card">
+                        <div class="course-image blue-two">HC</div>
+                        <div class="course-body">
+                            <span class="tag">Web</span>
+                            <h3>HTML e CSS</h3>
+                            <p>Crie páginas estruturadas, responsivas e com uma apresentação consistente.</p>
+                            <div class="course-meta"><span>30 horas</span><a href="curso.html?id=2">Detalhes</a></div>
+                        </div>
+                    </article>
+                    <article class="course-card">
+                        <div class="course-image blue-three">PY</div>
+                        <div class="course-body">
+                            <span class="tag">Programação</span>
+                            <h3>Python Essencial</h3>
+                            <p>Aprenda a lógica de programação usando uma linguagem versátil.</p>
+                            <div class="course-meta"><span>50 horas</span><a href="curso.html?id=3">Detalhes</a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-section section-space">
+            <div class="container">
+                <div class="section-heading centered">
+                    <p class="eyebrow">COMO FUNCIONA</p>
+                    <h2>Do curso à matrícula em poucos passos</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card"><span>01</span><h3>Escolha</h3><p>Consulte os cursos e veja os detalhes de cada formação.</p></div>
+                    <div class="step-card"><span>02</span><h3>Cadastre-se</h3><p>Crie sua conta para acessar a área do aluno.</p></div>
+                    <div class="step-card"><span>03</span><h3>Matricule-se</h3><p>Solicite sua matrícula e acompanhe o status pelo sistema.</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div><strong>Gestão+</strong><p>Sistema acadêmico para fins educacionais.</p></div>
+            <p>Projeto desenvolvido com HTML, CSS, JavaScript e Supabase.</p>
+        </div>
+    </footer>
+</body>
+</html>
